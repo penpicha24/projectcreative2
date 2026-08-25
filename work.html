@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OLIVE — Space</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+:root{
+  --olive:#59633f;
+  --dark:#25291d;
+  --sage:#b8c5a4;
+  --sand:#d9c39f;
+  --oat:#f1eadc;
+  --cream:#faf7ef;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:'DM Sans',sans-serif;
+  background:var(--cream);
+  color:var(--dark);
+}
+
+a{text-decoration:none;color:inherit}
+
+.nav{
+  padding:22px 6%;
+  display:flex;
+  justify-content:space-between;
+  border-bottom:3px solid var(--dark);
+}
+
+.logo{
+  font-size:28px;
+  font-weight:800;
+}
+
+.logo span{color:var(--olive)}
+
+.nav-links{
+  display:flex;
+  gap:30px;
+  list-style:none;
+  font-weight:700;
+}
+
+.nav-links a:hover{color:var(--olive)}
+
+.hero{
+  padding:100px 7% 60px;
+}
+
+.hero h1{
+  font-size:clamp(65px,11vw,150px);
+  line-height:.8;
+  letter-spacing:-8px;
+}
+
+.hero h1 em{
+  font-family:'Playfair Display',serif;
+  color:var(--olive);
+}
+
+.hero p{
+  max-width:550px;
+  font-size:20px;
+  line-height:1.7;
+  margin-top:35px;
+}
+
+.gallery{
+  padding:40px 7% 120px;
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:25px;
+}
+
+.gallery img{
+  border:5px solid var(--dark);
+  box-shadow:10px 10px 0 var(--olive);
+  transition:.4s;
+}
+
+.gallery img:hover{
+  transform:scale(1.02) rotate(1deg);
+}
+
+.big{
+  height:650px;
+}
+
+.small{
+  height:300px;
+  margin-bottom:50px;
+}
+
+.info{
+  background:var(--sage);
+  padding:100px 7%;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:70px;
+}
+
+.info h2{
+  font-size:75px;
+  line-height:.9;
+  letter-spacing:-4px;
+}
+
+.info h2 span{
+  font-family:'Playfair Display',serif;
+  color:var(--olive);
+}
+
+.info p{
+  font-size:20px;
+  line-height:1.8;
+}
+
+.tags{
+  margin-top:30px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.tag{
+  border:3px solid var(--dark);
+  padding:10px 16px;
+  font-weight:700;
+  background:var(--cream);
+}
+
+footer{
+  background:var(--dark);
+  color:var(--cream);
+  padding:60px;
+  text-align:center;
+}
+
+@media(max-width:800px){
+
+  .nav-links{display:none}
+
+  .gallery{
+    grid-template-columns:1fr;
+  }
+
+  .big{height:450px}
+
+  .small{
+    height:280px;
+    margin-bottom:20px;
+  }
+
+  .info{
+    grid-template-columns:1fr;
+  }
+
+  .info h2{
+    font-size:55px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="logo">OLIVE<span>.</span></a>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Menu</a></li>
+    <li><a href="work.html">Space</a></li>
+    <li><a href="process.html">Story</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+
+  <h1>
+    OUR<br>
+    <em>SPACE.</em>
+  </h1>
+
+  <p>
+    คาเฟ่ที่ไม่ได้สร้างขึ้นมาเพื่อให้คุณนั่งเฉย ๆ
+    แต่สร้างมาเพื่อให้คุณคิด สร้าง พูดคุย
+    และใช้เวลาในแบบของตัวเอง
+  </p>
+
+</section>
+
+<section class="gallery">
+
+  <img class="big"
+  src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1200&q=85">
+
+  <div>
+    <img class="small"
+    src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=900&q=85">
+
+    <img class="small"
+    src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85">
+  </div>
+
+</section>
+
+<section class="info">
+
+  <h2>
+    MADE FOR<br>
+    <span>CREATORS.</span>
+  </h2>
+
+  <div>
+    <p>
+      ไม่ว่าจะเป็นวันที่ต้องนั่งทำงาน
+      นัดเพื่อนคุยงาน อ่านหนังสือ
+      หรือแค่อยากหามุมเงียบ ๆ
+      OLIVE มีพื้นที่ให้คุณเลือก
+    </p>
+
+    <div class="tags">
+      <div class="tag">Wi-Fi</div>
+      <div class="tag">Work Space</div>
+      <div class="tag">Pet Friendly</div>
+      <div class="tag">Natural Light</div>
+      <div class="tag">Music</div>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <h2>FIND YOUR CORNER.</h2>
+</footer>
+
+</body>
+</html>
