@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OLIVE — Story</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+:root{
+  --olive:#59633f;
+  --dark:#25291d;
+  --sage:#b8c5a4;
+  --sand:#d9c39f;
+  --oat:#f1eadc;
+  --cream:#faf7ef;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:'DM Sans',sans-serif;
+  background:var(--oat);
+  color:var(--dark);
+}
+
+a{text-decoration:none;color:inherit}
+
+.nav{
+  padding:22px 6%;
+  display:flex;
+  justify-content:space-between;
+  border-bottom:3px solid var(--dark);
+}
+
+.logo{
+  font-size:28px;
+  font-weight:800;
+}
+
+.logo span{color:var(--olive)}
+
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap:30px;
+  font-weight:700;
+}
+
+.nav-links a:hover{color:var(--olive)}
+
+.hero{
+  padding:110px 7%;
+  background:var(--sand);
+}
+
+.hero h1{
+  font-size:clamp(65px,11vw,145px);
+  line-height:.8;
+  letter-spacing:-8px;
+}
+
+.hero h1 em{
+  font-family:'Playfair Display',serif;
+  color:var(--olive);
+}
+
+.hero p{
+  margin-top:35px;
+  max-width:600px;
+  font-size:20px;
+  line-height:1.8;
+}
+
+.story{
+  padding:110px 7%;
+}
+
+.story-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  margin-bottom:70px;
+}
+
+.story-head h2{
+  font-size:75px;
+  letter-spacing:-5px;
+  line-height:.9;
+}
+
+.story-head span{
+  color:var(--olive);
+  font-weight:800;
+}
+
+.timeline{
+  max-width:900px;
+  margin:auto;
+  position:relative;
+}
+
+.timeline::before{
+  content:"";
+  position:absolute;
+  left:40px;
+  top:0;
+  bottom:0;
+  width:5px;
+  background:var(--dark);
+}
+
+.step{
+  position:relative;
+  padding-left:100px;
+  margin-bottom:80px;
+}
+
+.number{
+  position:absolute;
+  left:0;
+  top:0;
+  width:80px;
+  height:80px;
+  border:4px solid var(--dark);
+  background:var(--olive);
+  color:var(--cream);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:25px;
+  font-weight:800;
+  z-index:2;
+}
+
+.step h3{
+  font-size:40px;
+  margin-bottom:15px;
+}
+
+.step p{
+  font-size:18px;
+  line-height:1.8;
+}
+
+.quote{
+  background:var(--dark);
+  color:var(--cream);
+  padding:120px 7%;
+  text-align:center;
+}
+
+.quote h2{
+  font-size:clamp(40px,7vw,90px);
+  line-height:1;
+  max-width:1000px;
+  margin:auto;
+}
+
+.quote em{
+  color:var(--sage);
+  font-family:'Playfair Display',serif;
+}
+
+footer{
+  background:var(--olive);
+  color:var(--cream);
+  padding:60px;
+  text-align:center;
+}
+
+@media(max-width:800px){
+
+  .nav-links{display:none}
+
+  .story-head{
+    display:block;
+  }
+
+  .story-head h2{
+    font-size:55px;
+  }
+
+  .step{
+    padding-left:85px;
+  }
+
+  .number{
+    width:65px;
+    height:65px;
+  }
+
+  .timeline::before{
+    left:32px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="logo">OLIVE<span>.</span></a>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Menu</a></li>
+    <li><a href="work.html">Space</a></li>
+    <li><a href="process.html">Story</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+
+  <h1>
+    OUR<br>
+    <em>STORY.</em>
+  </h1>
+
+  <p>
+    จากความชอบกาแฟเล็ก ๆ สู่พื้นที่ที่อยากแบ่งปัน
+    ความคิดสร้างสรรค์ อาหาร และช่วงเวลาดี ๆ ให้กับทุกคน
+  </p>
+
+</section>
+
+<section class="story">
+
+  <div class="story-head">
+    <h2>HOW WE<br>BREW IT.</h2>
+    <span>OUR JOURNEY / 2026</span>
+  </div>
+
+  <div class="timeline">
+
+    <div class="step">
+      <div class="number">01</div>
+      <h3>FIND</h3>
+      <p>
+        เราเริ่มต้นจากการตามหากาแฟที่มีคาแรกเตอร์
+        และวัตถุดิบที่สามารถเล่าเรื่องผ่านรสชาติได้
+      </p>
+    </div>
+
+    <div class="step">
+      <div class="number">02</div>
+      <h3>CREATE</h3>
+      <p>
+        ทดลองเมนูใหม่ ๆ จนได้รสชาติที่เป็นเอกลักษณ์
+        และสร้างบรรยากาศที่ทำให้คนรู้สึกอยากใช้เวลาอยู่ที่นี่
+      </p>
+    </div>
+
+    <div class="step">
+      <div class="number">03</div>
+      <h3>SHARE</h3>
+      <p>
+        เราเชื่อว่าคาเฟ่ที่ดีควรเป็นพื้นที่ที่ทุกคนสามารถ
+        เข้ามาเป็นตัวเอง พบผู้คน และแชร์เรื่องราวร่วมกัน
+      </p>
+    </div>
+
+    <div class="step">
+      <div class="number">04</div>
+      <h3>REPEAT</h3>
+      <p>
+        และกลับมาอีกครั้ง เพราะบางครั้งสิ่งที่เราต้องการ
+        อาจเป็นเพียงกาแฟดี ๆ และมุมโปรดของเรา
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="quote">
+  <h2>
+    “A GOOD DAY<br>
+    STARTS WITH <em>GOOD COFFEE.</em>”
+  </h2>
+</section>
+
+<footer>
+  <h2>SEE YOU AT OLIVE.</h2>
+</footer>
+
+</body>
+</html>
